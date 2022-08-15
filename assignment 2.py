@@ -48,18 +48,18 @@ d2_p2_m = minute_dif_p2 % 60
 print(f"Degree difference of latitude is {d2_p2_d} degree and {d2_p2_m} minutes")
 
 #area of trapizoid
-base1_top = float(input('Enter value of top base: '))
-base2_bottom = float(input('Enter value of bottom base: '))
+a = float(input('Enter value of top base: '))
+b = float(input('Enter value of bottom base: '))
 left = float(input('Enter value of left side: '))
 right = float(input('Enter value of right: '))
 
-s = (left + right + (base2_bottom - base1_top)) / 2
+s = (left + right + (b - a)) / 2
 
-triangle_area = (s * (s - left) * (s - right) * (s - (base2_bottom - base1_top))) ** 0.5
+triangle_area = (s * (s - left) * (s - right) * (s - (b - a))) ** 0.5
 
-height = (2 * triangle_area) / (base2_bottom - base1_top)
+height = (2 * triangle_area) / (b - a)
 
 
-trapi_area = ((base1_top + base2_bottom) / 2) * height
+trapi_area = ((a + b) / 2) * height
 
 print(f"The area of the trapezoid is {trapi_area}")
