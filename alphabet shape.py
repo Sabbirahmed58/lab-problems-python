@@ -1,11 +1,7 @@
 ##triangle
-num= int(input())
-
-for i in range (num):
-    print(" "*(num-i-1),end="")
-    for j in range(i+1):
-        print(chr(65+j),end=" ")
-    print()
+n= int(input())
+for i in range(n):
+    print(" "*(n-i-1)+(chr(65+i)+" ")*(i+1))
 
 
 #inverted triangle
